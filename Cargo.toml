@@ -1,7 +1,12 @@
 [package]
 name = "tonic-async-interceptor"
 authors = ["Joe Dahlquist <joe@arcanyx.com>"]
-categories = ["web-programming", "network-programming", "asynchronous", "authentication"]
+categories = [
+    "web-programming",
+    "network-programming",
+    "asynchronous",
+    "authentication",
+]
 description = "Async variant of Tonic's interceptor function"
 documentation = "https://docs.rs/tonic-async-interceptor"
 edition = "2018"
@@ -17,10 +22,10 @@ bytes = "1.0"
 http = "0.2"
 http-body = "0.4.4"
 pin-project = "1.0"
-tonic = "0.8.1"
+tonic = "0.9.2"
 tower-layer = "0.3"
 tower-service = "0.3"
 
 [dev-dependencies]
-tokio = {version = "1.0", features = ["rt", "macros"]}
-tower = {version = "0.4.7", features = ["full"]}
+tokio = { version = "1.0", features = ["rt", "macros"] }
+tower = { version = "0.4.7", features = ["full"] }
